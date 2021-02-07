@@ -20,8 +20,10 @@ How to Use a Communication Hook?
 --------------------------------
 
 To use a communication hook, the user just needs to let the DDP model register
-the hook before the training loop by calling
-:func:`torch.nn.parallel.DistributedDataParallel.register_comm_hook`.
+the hook before the training loop as below.
+
+.. currentmodule:: torch.nn.parallel.DistributedDataParallel
+.. autofunction:: register_comm_hook
 
 Default Communication Hooks
 ---------------------------
